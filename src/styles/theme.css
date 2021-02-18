@@ -1,0 +1,35 @@
+:root {
+  --darkText: #d4d4d4;
+  --darkBack: #1e1e1e;
+
+  --lightText: #1e1e1e;
+  --lightBack: #d4d4d4;
+
+  --linkColorText: #0070f3;
+
+  --backgroundLight: var(--lightBack);
+  --colorLight: var(--lightText);
+  --linkColorLight: var(--linkColorText);
+  --borderColorLight: var(--lightText);
+
+  --backgroundDark: var(--darkBack);
+  --colorDark: var(--darkText);
+  --linkColorDark: var(--linkColorText);
+  --borderColorDark: var(--darkText);
+}
+
+.light {
+  background-color: var(--backgroundLight);
+  color: var(--colorLight);
+}
+.dark {
+  background-color: var(--backgroundDark);
+  color: var(--colorDark);
+}
+
+.light a {
+  color: var(--linkColorLight);
+}
+.dark a {
+  color: var(--linkColorDark);
+}

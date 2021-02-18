@@ -1,17 +1,17 @@
 import Head from "next/head";
-import styles from "../../styles/Settings.module.css";
 import Link from "next/link";
+import Layout from "../../components/layout";
 
 export default function Settings() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
-        <title>Start.app</title>
+        <title>Settings.app</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Link href="/">
         <a>Start</a>
       </Link>
-    </div>
+    </Layout>
   );
 }

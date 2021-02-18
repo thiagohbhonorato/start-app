@@ -1,20 +1,21 @@
 import React from "react";
 import Head from "next/head";
-import styles from "../styles/Start.module.css";
 import Link from "next/link";
+import Layout from "../components/layout";
+import styles from "../styles/Start.module.css";
 
 function Start({ data }) {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>Start.app</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link href="/settings">
-        <a>Settings</a>
-      </Link>
-      {JSON.stringify(data)}
-    </div>
+      <div className={styles.container}>
+        <div className={styles.list}>list</div>
+        <div className={styles.grid}>grid</div>
+      </div>
+    </Layout>
   );
 }
 
