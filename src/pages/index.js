@@ -2,18 +2,25 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
-import styles from "../styles/Start.module.css";
+import styles from "../styles/components/Start.module.css";
+import SettingBar from "../components/SettingBar";
+
+import ShortcutList from "../components/ShortcutList";
+import ShortcutGrid from "../components/ShortcutGrid";
+import StartContext from "../context/StartContext";
 
 function Start({ data }) {
   return (
     <Layout>
       <Head>
         <title>Start.app</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <div className={styles.list}>list</div>
-        <div className={styles.grid}>grid</div>
+        <StartContext.Provider value={{ data }}>
+          <SettingBar />
+          <ShortcutList />
+          <ShortcutGrid />
+        </StartContext.Provider>
       </div>
     </Layout>
   );

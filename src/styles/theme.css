@@ -1,20 +1,24 @@
 :root {
-  --darkText: #d4d4d4;
-  --darkBack: #1e1e1e;
-
-  --lightText: #1e1e1e;
+  --lightText: #1f1f1f;
   --lightBack: #d4d4d4;
+  --lightDark: #4c4a48;
+  --lightDark2: #353535;
+  --lightDark3: #a5a4a3;
 
-  --linkColorText: #0070f3;
+  --darkText: #ffffff;
+  --darkBack: #1f1f1f;
+  --darkLight: #4c4a48;
+  --darkLight2: #353535;
+  --darkLight3: #a5a4a3;
 
   --backgroundLight: var(--lightBack);
   --colorLight: var(--lightText);
-  --linkColorLight: var(--linkColorText);
+  --linkColorLight: var(--lightText);
   --borderColorLight: var(--lightText);
 
   --backgroundDark: var(--darkBack);
   --colorDark: var(--darkText);
-  --linkColorDark: var(--linkColorText);
+  --linkColorDark: var(--darkText);
   --borderColorDark: var(--darkText);
 }
 
@@ -32,4 +36,32 @@
 }
 .dark a {
   color: var(--linkColorDark);
+}
+
+.light .bgFavicon {
+  background-color: var(--lightDark);
+}
+.dark .bgFavicon {
+  background-color: var(--darkLight);
+}
+
+.light .borderFavicon:hover {
+  border-color: var(--lightDark3);
+}
+.dark .borderFavicon:hover {
+  border-color: var(--darkLight3);
+}
+
+.light .bgItemList:hover {
+  background-color: var(--lightDark2);
+}
+.dark .bgItemList:hover {
+  background-color: var(--darkLight2);
+}
+
+.light .bgItemBar:hover {
+  background-color: var(--lightDark2);
+}
+.dark .bgItemBar:hover {
+  background-color: var(--darkLight2);
 }

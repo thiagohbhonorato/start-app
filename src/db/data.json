@@ -1,5 +1,11 @@
 [
   {
-    "name": "Thiago Honorato"
+    "url": "https://www.google.com/",
+    "label": "Google",
+    "favicon": "https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"
+  },{
+    "url": "https://github.com/",
+    "label": "GitHub",
+    "favicon": "https://github.githubassets.com/favicons/favicon-dark.svg"
   }
 ]
