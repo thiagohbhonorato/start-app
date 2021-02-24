@@ -65,3 +65,10 @@
 .dark .bgItemBar:hover {
   background-color: var(--darkLight2);
 }
+
+.light .fillSVG {
+  fill: var(--lightText);
+}
+.dark .fillSVG {
+  fill: var(--darkText);
+}
