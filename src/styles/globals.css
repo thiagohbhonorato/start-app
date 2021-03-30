@@ -19,3 +19,12 @@ a > label:hover {
 .container {
   min-height: 100vh;
 }
+.input {
+  font-family: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+}

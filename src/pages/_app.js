@@ -1,3 +1,4 @@
+import StartProvider from "../context/StartContext";
 import "../styles/globals.css";
 import "../styles/theme.css";
 

@@ -72,3 +72,19 @@
 .dark .fillSVG {
   fill: var(--darkText);
 }
+
+.light input {
+  color: var(--lightText);
+}
+.dark input {
+  color: var(--darkText);
+}
+
+.light input:focus {
+  color: var(--lightText);
+  background-color: var(--lightBack);
+}
+.dark input:focus {
+  color: var(--darkBack);
+  background-color: #ffffff;
+}
