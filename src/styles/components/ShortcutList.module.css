@@ -9,6 +9,11 @@
   padding: 0;
   margin: 0;
 }
+.group {
+  font-size: 0.8em;
+  height: 2rem;
+  line-height: 2.5rem;
+}
 .item {
   position: relative;
   height: 2.25rem;

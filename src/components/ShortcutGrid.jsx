@@ -5,11 +5,13 @@ import cn from "classnames";
 import Input from "./Input";
 
 export default function ShortcutGrid() {
-  const { data } = useContext(StartContext);
+  const {
+    data: { grid },
+  } = useContext(StartContext);
   return (
     <div className={styles.shortcutGrid}>
       <div className={styles.grid}>
-        {data.map(({ group, ...item }, index) => {
+        {grid.map(({ group, ...item }, index) => {
           if (group) return <Group text={group} key={index} />;
           else return <Shortcut data={item} key={index} />;
         })}
